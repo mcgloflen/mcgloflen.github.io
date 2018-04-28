@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Society 55</title>
+    <link rel="shortcut icon" href="./rect3338.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./package/dist/bulma-checkradio.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+  </head>
+    <body class="has-navbar-fixed-top">
+
+      <nav class="navbar is-black is-fixed-top">
+        <div class="navbar-brand">
+          <a class="navbar-item app-nav" href="/">
+              Society 55
+          </a>
+        </div>
+      </nav>
+
+      <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="/">Society 55</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Apply</a></li>
+        </ul>
+      </nav>
+
+    <div class="container app">
+      <form id="apply-form" action="https://formspree.io/logan@society55.org" method="POST">
+      <section class="section">
+        <h1 class="title">Basic information</h1>
+        <div class="columns">
+          <div class="column">
+            <div class="field">
+              <label class="label"></label>
+              <div class="control">
+                <input class="input" type="text" placeholder="First name" name="first-name" required>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label class="label"></label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Last name" name="last-name" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Occupation" name="occupation" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Location of occupancy" name="occupancy-location" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <input class="input" type="email" placeholder="Email" name="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Preferred contact method" name="preferred-contact" required>
+          </div>
+        </div>
+        <p class="help">Your personal information will not be shared with anyone.</p>
+      </section>
+
+        <hr class="is-marginless">
+      <section class="section">
+        <h1 class="title">Interests</h1>
+
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="healthcare">
+              Healthcare
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="housing">
+              Housing
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="education">
+              Education
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="civil-rights">
+              Civil rights/race relations
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="immigration">
+              Immigration
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="employment">
+              Employment
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox">
+              Other
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" placeholder="Please elaborate on your selection(s)" name="interests-text"></textarea>
+          </div>
+        </div>
+      </section>
+
+        <hr class="is-marginless">
+
+      <section class="section">
+        <h1 class="title">Desired Involvement</h1>
+
+        <div class="field">
+          <label class="label">Location</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="location">
+              In-person/physical
+            </label>
+            <label class="radio">
+              <input type="radio" name="location">
+              Online/media
+            </label>
+            <label class="radio">
+              <input type="radio" name="location" checked>
+              Both
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Scope</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="scope">
+              Local/community
+            </label>
+            <label class="radio">
+              <input type="radio" name="scope">
+              Nationwide
+            </label>
+            <label class="radio">
+              <input type="radio" name="scope" checked>
+              Both
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Pay</label>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="pay">
+              Volunteer
+            </label>
+            <label class="radio">
+              <input type="radio" name="pay">
+              Paid
+            </label>
+            <label class="radio">
+              <input type="radio" name="pay" checked>
+              Both
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Services</label>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="brand-partnerships">
+              Brand partnerships
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="product-promotions">
+              Product promotions
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="event-appearances">
+              Event appearances
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="university-collaborations">
+              University collaborations
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox">
+              Press
+            </label>
+          </div>
+          <div class="control">
+            <label class="checkbox">
+            <input type="checkbox" name="other-services">
+              Other
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" placeholder="Additional information" name="involvement-text"></textarea>
+          </div>
+        </div>
+      </section>
+
+        <hr class="is-marginless">
+
+      <section class="section">
+        <h1 class="title">Social stats</h1>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Facebook" name="facebook">
+            <span class="icon is-left">
+              <i class="fab fa-facebook"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Instagram" name="instagram">
+            <span class="icon is-left">
+              <i class="fab fa-instagram"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Twitter" name="twitter">
+            <span class="icon is-left">
+              <i class="fab fa-twitter"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Snapchat" name="snapchat">
+            <span class="icon is-left">
+              <i class="fab fa-snapchat"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Other" name="social-text"></textarea>
+          </div>
+        </div>
+        <p class="help">We use this information to find you suitable opportunities.</p>
+      </section>
+
+        <hr class="is-marginless">
+
+      <section class="section">
+        <h1 class="title">Final questions</h1>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <textarea class="textarea" placeholder="What causes/organizations do you currently support or work with?" name="question-1" required></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Why do you want to become a partner?" name="question-2" required></textarea>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Additional questions/comments..." name="question-3"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <hr class="is-marginless">
+
+      <section class="section">
+        <h1 class="title">Invitation code</h1>
+        <div class="field">
+          <label class="label"></label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Invitation code (if applicable)" name="invitation-code">
+          </div>
+        </div>
+      </section>
+
+      <hr class="is-marginless">
+
+      <section class="section">
+        <div class="field is-grouped">
+          <p class="control">
+            <input class="button is-black" type="submit" value="Submit">
+          </p>
+          <p class="control">
+            <a href="/" class="button cancel" id="cancel">
+              Cancel
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <input type="hidden" name="_next" value="//society55.org/thanks" />
+    </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            For inquiries, contact <a class="purple" href='mailto:logan@society55.org'>logan@society55.org</a><br>San Francisco, CA<br>&copy; 2018
+          </p>
+        </div>
+      </div>
+    </footer>
+
+<script src="app.js"></script>
+  </body>
+</html>
